@@ -1,10 +1,15 @@
 # Aiven Quickstart Guide
 
-This repo houses a getting started with Aiven guide for Apache Kafka®, Apache Flink, Influx DB, Open Search and Grafana®
+This repo houses a getting started with Aiven guide for Apache Kafka®, Apache Flink®, Influx DB, OpenSearch®, and Grafana®
 
 ## Setup and Configuration
 
-### Aiven Plaform
+### Aiven Platform
+1. Signup for a trial account:
+2. Activate (verify) account sign-up if using GitHub/Microsoft/Google
+<img width="414" alt="image" src="https://github.com/curious-jen/aiven/assets/165078304/0330cd88-65ec-44c4-ab89-7fd1561ea66e">
+3.
+
 ### Aiven for Apache Kafka®
 ### Aiven for Apache Flink®
 ### InfluxDB 
@@ -20,4 +25,5 @@ This repo houses a getting started with Aiven guide for Apache Kafka®, Apache F
 - **Aiven for OpenSearch®** https://aiven.io/opensearch
 - **Aiven Github** https://github.com/aiven
 - **Aiven for Grafana®** https://aiven.io/grafana
+- **Aiven Ideas (Product Request) Portal** https://ideas.aiven.io/ 
 
