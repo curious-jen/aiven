@@ -8,7 +8,7 @@ Our completed work will include the following components:
 
 
 ## Aiven Platform
-1. Signup for an Aiven trial account: https://console.aiven.io/signup <img width="650" alt="sign up screen" src="https://github.com/curious-jen/aiven/assets/165078304/83561e45-d464-4713-9e2f-839e60a638bc">
+1. Signup for an Aiven trial account. Sign Up: Visit the Aiven website and sign up for an account. You'll need to provide some basic information like your email address, company name, etc. https://console.aiven.io/signup <img width="650" alt="sign up screen" src="https://github.com/curious-jen/aiven/assets/165078304/83561e45-d464-4713-9e2f-839e60a638bc">
 
 2. Activate (verify) account sign-up if using GitHub/Microsoft/Google <img width="500" alt="email verification" src="https://github.com/curious-jen/aiven/assets/165078304/0330cd88-65ec-44c4-ab89-7fd1561ea66e">
 
