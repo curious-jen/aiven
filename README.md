@@ -7,19 +7,22 @@ Our completed work will include the following components:
  - A Flink service filtering the incoming messages and sending the filtered data to Kafka
 
 
-## Aiven Platform
-1. Signup for an Aiven trial account. Sign Up: Visit the Aiven website and sign up for an account. You'll need to provide some basic information like your email address, company name, etc. https://console.aiven.io/signup <img width="650" alt="sign up screen" src="https://github.com/curious-jen/aiven/assets/165078304/83561e45-d464-4713-9e2f-839e60a638bc">
-
-2. Activate (verify) account sign-up if using GitHub/Microsoft/Google <img width="500" alt="email verification" src="https://github.com/curious-jen/aiven/assets/165078304/0330cd88-65ec-44c4-ab89-7fd1561ea66e">
-
-3. You will now be able to access Aiven console for configuring the services in the following sections. <img width="650" alt="email verification" src="https://github.com/curious-jen/aiven/assets/165078304/314d152b-a473-4626-8ac8-96aa40a86f81">
+## Setup and Configuration
+1. **Sign Up:** Visit the Aiven website and sign up for an account. You'll need to provide some basic information like your email address, company name, etc. https://console.aiven.io/signup 
+2. **Verify Email:** After signing up, you might need to verify your email address by clicking on a link sent to your email inbox.<img 
+3. **Login:** Once your email is verified, you will be able to login to your Aiven account. Aiven console for configuring the services in the following sections.
+4. **Setup your First Service**  To create a Kafka Service, select a cloud provider, the region where you want to deploy the service, and the plan that determines the amount of resources available for your cluster. We are going with the Business-4.
+5.  **Access Credentials** After the services are provisioned, you'll receive access credentials (such as connection URLs, usernames, passwords, API tokens) for accessing your services. For this exercise, we will be using Java and therefore will need to configure the Java connection method. You can reference this doc for details:https://aiven.io/docs/products/kafka/howto/connect-with-java.
+6. **Configure the first topic:** https://aiven.io/docs/products/kafka/howto/create-topic
+7. **Integration:** Integrate the provisioned services into your application or infrastructure. This might involve updating connection strings, configurations, etc., in your application.
+8. **Monitor and Manage:** Monitor the performance and health of your services using Aiven's 
 
 
 
 ## Aiven for Apache Kafka®
-Aiven for Apache Kafka® is a fully managed distributed data streaming platform, deployable in the cloud of your choice. Apache Kafka is an open source data streaming platform, ideal for event-driven applications, near-real-time data transfer and pipelines, stream analytics, and many more applications where a lot of data needs to move between applications in a speedy manner.
+Aiven for Apache Kafka® is a fully managed distributed data streaming platform, deployable in the cloud of your choice. Apache Kafka is an open-source data streaming platform, ideal for event-driven applications, near-real-time data transfer and pipelines, stream analytics, and many more applications where a lot of data needs to move between applications in a speedy manner.
 
-Kafka stores a potentially large number of records, each contains a small amount of data, usually for a limited period of time. The storage is organised into "topics" and "partitions" so that many data streams can be handled at once, regardless of how much data is flowing into or out of your Aiven for Apache Kafka service.
+Kafka stores a potentially large number of records, each containing a small amount of data, usually for a limited period of time. The storage is organized into "topics" and "partitions" so that many data streams can be handled at once, regardless of how much data is flowing into or out of your Aiven for Apache Kafka service.
 
 ### Kafka Setup and Config
 Here we will create a Kafka service in Aiven and write a piece of code that produces valid JSON data to a topic in that service. 
@@ -28,7 +31,7 @@ Here we will create a Kafka service in Aiven and write a piece of code that prod
  - The event will include a timestamp represented by a string with the date in ISO 8601 format. 
  - The producer's data will be readable from the Aiven web console from the Kafka service view > Topics => Topic => Fetch Messages (Format: JSON).
 
-1. *Create a new Kafka Service in your cloud provider and region of choice.* To create a Kafka Service, select a cloud provider, the region where you want to deploy the service, and the plan that determines the amount of resources available for your cluster. We are going with the Business-4 as this will not require significant resource. Finally set the service name; in this example, 
+
 
 ## Aiven for Apache Flink®
 Now that we have the data flowing into the Kafka topic, we will integrate your Kafka service with Aiven for Flink to filter the data into two new topics. Our goal here is to create two Flink jobs to split the data to show the power of Flink filtering.    
