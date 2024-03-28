@@ -14,9 +14,7 @@ Our completed work will include the following components:
 
 
 ## Aiven for Apache Kafka®
-Aiven for Apache Kafka® is a fully managed distributed data streaming platform, deployable in the cloud of your choice. Apache Kafka is an open-source data streaming platform, ideal for event-driven applications, near-real-time data transfer and pipelines, stream analytics, and many more applications where a lot of data needs to move between applications in a speedy manner.
-
-Kafka stores a potentially large number of records, each containing a small amount of data, usually for a limited period of time. The storage is organized into "topics" and "partitions" so that many data streams can be handled at once, regardless of how much data is flowing into or out of your Aiven for Apache Kafka service.
+https://aiven.io/docs/products/kafka
 
 ### 1. Setup your First Kafka Service  
 Select a cloud provider, the region where you want to deploy the service, and the plan that determines the amount of resources available for your cluster. We are going with the *Startup-2* (2 CPU, 2 GB RAM, 90 GB storage, no backups) 3-node high availability set. This will be plenty of resources for testing. 
@@ -51,8 +49,27 @@ Here we will create a Kafka service in Aiven and write a piece of code that prod
 <<Placeholder for Code references>>
 
 ## Aiven for Apache Flink®
-Now that we have the data flowing into the Kafka topic, we will integrate your Kafka service with Aiven for Flink to filter the data into two new topics. Our goal here is to create two Flink jobs to split the data to show the power of Flink filtering.    
- - We will use an attribute within the JSON payload (e.g. odd/even date seconds, a number modulo 2, etc.) to bifurcate incoming data into two topics.  
+https://aiven.io/docs/products/flink/get-started
+  
+### 1. Create a New Flink Service 
+In your existing project, Select **Create Service** =>Create Apache Flink® service, Select the Business-4 plan, update the Name if desired => then select **Create service**
+
+### 2. Create data pipeline (integration)
+Select Create a data pipeline, then select your Kafka service, then **Integrate**
+![image](https://github.com/curious-jen/aiven/assets/165078304/34c2d883-d14b-4f6c-88a8-091820a68f34)
+![image](https://github.com/curious-jen/aiven/assets/165078304/4215decc-97b7-4642-9dd8-dbdee996bf50)
+
+### 3. Create a Flink SQL Application
+https://aiven.io/docs/products/flink/howto/create-sql-application
+ - https://aiven.io/docs/products/flink/howto/connect-kafka#create-apache-flink-table-with-aiven-console
+
+
+
+
+   
+### Flink Exercise
+Now that we have the data flowing into the Kafka topic, we will integrate your Kafka service with Aiven for Flink to filter the data into two new topics. Our goal here is to create two Flink jobs to split the data to show the power of Flink filtering. 
+ - We will use an attribute within the JSON payload (e.g. odd/even date seconds, a number modulo 2, etc.) to bifurcate incoming data into two topics.
 
 ## Integration
 Integrate the provisioned services into your application or infrastructure. This might involve updating connection strings, configurations, etc., in your application. 
