@@ -1,10 +1,11 @@
-# Aiven Quickstart Guide
+# Aiven Quickstart Guide with Java 
 
-This repo houses a getting started guide to walk through a mock setup up of: Aiven for Apache Kafka®, Aiven for Flink® and well as integrating Aiven Obseribility components (Influx DB, OpenSearch®, and Grafana®).
+This repo houses a getting started guide to walk through a mock setup of Aiven for Apache Kafka®, Aiven for Flink® and well as integrating Aiven Obseribility components (Influx DB, OpenSearch®, and Grafana®).
 Our completed work will include the following components:
- - A Kafka service integrated with the Aiven Observability stack. 
- - A producer (in Java) sending data to Kafka.
+ 
+ - A producer (in Java) sending mock IOT data to Kafka.
  - A Flink service filtering the incoming messages and sending the filtered data to Kafka
+ - A Kafka service integrated with the Aiven Observability stack. 
 
 
 ## Setup and Configuration
