@@ -46,7 +46,7 @@ Here we will create a Kafka service in Aiven and write a piece of code that prod
  - The event will include a timestamp represented by a string with the date in ISO 8601 format. 
  - The producer's data will be readable from the Aiven web console from the Kafka service view > Topics => Topic => Fetch Messages.
 
-Here is the reference to the code to produce the mock event: java-tqs/main/java/io/aiven/demo/kafka/ProducerDemo.java
+=>[Here is the reference to the code to produce the mock IOT events](https://github.com/curious-jen/aiven/blob/main/java-tqs/main/java/io/aiven/demo/kafka/ProducerDemo.java)
 
 ## Aiven for Apache Flink®
 https://aiven.io/docs/products/flink/get-started
