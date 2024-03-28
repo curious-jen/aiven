@@ -74,8 +74,6 @@ Monitor the performance and health of your services using Aiven.
 
 ## Aiven for Grafana®
 
-## Assumptions, Exceptions and Notes. 
-To keep this exercise succinct and fairly simplistic, we will be using the UI whenever possible. This mitigates nuances/challenges for those who may not be using Mac. 
 
 ## References
 - **Aiven Blog** https://aiven.io/blog
