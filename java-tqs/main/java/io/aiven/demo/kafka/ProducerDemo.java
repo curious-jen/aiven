@@ -1,8 +1,8 @@
+package your.project;
+
 import org.apache.kafka.clients.producer.KafkaProducer;
-import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.common.serialization.StringSerializer;
-import org.apache.kafka.common.serialization.ByteArraySerializer;
 
 import java.util.Properties;
 import java.util.UUID;
@@ -28,6 +28,7 @@ public class KafkaProducerExample {
         props.put("key.serializer", StringSerializer.class.getName()); // Use StringSerializer for key
         props.put("value.serializer", StringSerializer.class.getName()); // Use StringSerializer for value
 
+         // create a producer
         Producer<String, String> producer = new KafkaProducer<>(props);
 
         // Generate multiple JSON payloads
