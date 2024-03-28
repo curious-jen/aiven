@@ -46,7 +46,7 @@ Here we will create a Kafka service in Aiven and write a piece of code that prod
  - The event will include a timestamp represented by a string with the date in ISO 8601 format. 
  - The producer's data will be readable from the Aiven web console from the Kafka service view > Topics => Topic => Fetch Messages.
 
-<<Placeholder for Code references>>
+Here is the reference to the code to produce the mock event: java-tqs/main/java/io/aiven/demo/kafka/ProducerDemo.java
 
 ## Aiven for Apache Flink®
 https://aiven.io/docs/products/flink/get-started
@@ -63,18 +63,11 @@ Select Create a data pipeline, then select your Kafka service, then **Integrate*
 https://aiven.io/docs/products/flink/howto/create-sql-application
  - https://aiven.io/docs/products/flink/howto/connect-kafka#create-apache-flink-table-with-aiven-console
 
-
-
-
    
 ### Flink Exercise
 Now that we have the data flowing into the Kafka topic, we will integrate your Kafka service with Aiven for Flink to filter the data into two new topics. Our goal here is to create two Flink jobs to split the data to show the power of Flink filtering. 
  - We will use an attribute within the JSON payload (e.g. odd/even date seconds, a number modulo 2, etc.) to bifurcate incoming data into two topics.
 
-## Integration
-Integrate the provisioned services into your application or infrastructure. This might involve updating connection strings, configurations, etc., in your application. 
-
-## InfluxDB 
 
 # Monitor and Manage
 Monitor the performance and health of your services using Aiven. 
