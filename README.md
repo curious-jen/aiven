@@ -39,7 +39,7 @@ Details on the variables can be found here: https://aiven.io/docs/products/kafka
 ![image](https://github.com/curious-jen/aiven/assets/165078304/d6e1ff7b-7b91-49a1-8d4e-04718f39d823)
 
 ### 5. Endpoint integrations
-We will not be setting this up in this stage. So you can select **Finish Setup** to complete the setup. 
+We will not be setting this up at this stage. So you can select **Finish Setup** to complete the setup. 
 
 ### Kafka Exercise
 Here we will create a Kafka service in Aiven and write a piece of code that produces valid JSON data to a topic in that service. 
@@ -47,14 +47,15 @@ Here we will create a Kafka service in Aiven and write a piece of code that prod
  - The payload should be a mock "event" of an IOT device.
  - The event will include a timestamp represented by a string with the date in ISO 8601 format. 
  - The producer's data will be readable from the Aiven web console from the Kafka service view > Topics => Topic => Fetch Messages.
- 1. Once you Ain configured with your first topic 
 
-## Integration
-Integrate the provisioned services into your application or infrastructure. This might involve updating connection strings, configurations, etc., in your application. 
+<<Placeholder for Code references>>
 
 ## Aiven for Apache Flink®
 Now that we have the data flowing into the Kafka topic, we will integrate your Kafka service with Aiven for Flink to filter the data into two new topics. Our goal here is to create two Flink jobs to split the data to show the power of Flink filtering.    
  - We will use an attribute within the JSON payload (e.g. odd/even date seconds, a number modulo 2, etc.) to bifurcate incoming data into two topics.  
+
+## Integration
+Integrate the provisioned services into your application or infrastructure. This might involve updating connection strings, configurations, etc., in your application. 
 
 ## InfluxDB 
 
