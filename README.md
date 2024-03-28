@@ -80,7 +80,6 @@ Monitor the performance and health of your services using Aiven.
 - **Aiven Docs Center** https://aiven.io/docs
 - **Aiven for Apache Flink®** https://aiven.io/flink
 - **Aiven for Apache Kafka®** https://aiven.io/kafka
-- **Aiven for OpenSearch®** https://aiven.io/opensearch
 - **Aiven Github** https://github.com/aiven
 - **Aiven for Grafana®** https://aiven.io/grafana
 - **Aiven Ideas (Product Request) Portal** https://ideas.aiven.io/ 
