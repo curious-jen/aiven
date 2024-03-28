@@ -13,6 +13,7 @@ public class KafkaProducerExample {
 
     public static void main(String[] args) {
         // Kafka producer configuration
+        String TOPIC_NAME = "name_topic";
         Properties props = new Properties();
         props.put("bootstrap.servers", KAFKA_BROKER_URL);
         props.put("security.protocol", "SSL");  // Depends on your Aiven configuration
