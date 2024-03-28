@@ -11,11 +11,6 @@ import java.time.format.DateTimeFormatter;
 
 public class KafkaProducerExample {
 
-    private static final String KAFKA_BROKER_URL = "<KAFKA_BROKER_URL>";
-    private static final String KAFKA_USERNAME = "<KAFKA_USERNAME>";
-    private static final String KAFKA_PASSWORD = "<KAFKA_PASSWORD>";
-    private static final String TOPIC_NAME = "<YOUR_TOPIC_NAME>";
-
     public static void main(String[] args) {
         // Kafka producer configuration
         Properties props = new Properties();
